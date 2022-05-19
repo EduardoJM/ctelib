@@ -1,6 +1,6 @@
 import sys
 from lxml import etree as etree_
-from .generated import ctelib as supermod
+from . import ctelib as supermod
 
 def parsexml_(infile, parser=None, keep_signature=False, **kwargs):
     if parser is None:

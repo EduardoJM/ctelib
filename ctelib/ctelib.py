@@ -2,17 +2,17 @@
 # -*- coding: utf-8 -*-
 
 #
-# Generated Thu May 19 15:45:41 2022 by generateDS.py version 2.40.13.
+# Generated Thu May 19 15:56:31 2022 by generateDS.py version 2.40.13.
 # Python 3.8.10 (default, Mar 15 2022, 12:22:08)  [GCC 9.4.0]
 #
 # Command line options:
-#   ('-o', 'lib/generated/cte_lib.py')
+#   ('-o', 'ctelib/ctelib.py')
 #
 # Command line arguments:
 #   ./schemas/v300/cte_v3.00.xsd
 #
 # Command line:
-#   /home/eduardo/Documentos/Repos/Contrib/ctelib/.venv/bin/generateDS -o "lib/generated/cte_lib.py" ./schemas/v300/cte_v3.00.xsd
+#   /home/eduardo/Documentos/Repos/Contrib/ctelib/.venv/bin/generateDS -o "ctelib/ctelib.py" ./schemas/v300/cte_v3.00.xsd
 #
 # Current working directory (os.getcwd()):
 #   ctelib
@@ -42130,8 +42130,8 @@ def parseLiteral(inFileName, silence=False, print_warnings=True):
         doc = None
         rootNode = None
     if not silence:
-        sys.stdout.write('#from cte_lib import *\n\n')
-        sys.stdout.write('import cte_lib as model_\n\n')
+        sys.stdout.write('#from ctelib import *\n\n')
+        sys.stdout.write('import ctelib as model_\n\n')
         sys.stdout.write('rootObj = model_.rootClass(\n')
         rootObj.exportLiteral(sys.stdout, 0, name_=rootTag)
         sys.stdout.write(')\n')
