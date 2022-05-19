@@ -1,0 +1,15 @@
+{
+  "name": "ctelib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "generate": "generateDS -o lib/generated/ctelib.py ./schemas/v300/cte_v3.00.xsd"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
