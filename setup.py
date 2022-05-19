@@ -16,7 +16,7 @@ setup(
         'License :: OSI Approved :: BSD License',
         "Operating System :: OS Independent",
     ],
-    keywords='CT-e ERP Odoo',
+    keywords='CT-e',
     packages=find_packages(),
     include_package_data=True,
     scripts=[],
