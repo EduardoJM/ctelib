@@ -16,6 +16,10 @@ setup(
         'License :: OSI Approved :: BSD License',
         "Operating System :: OS Independent",
     ],
+    install_requires=[
+        'lxml',
+        'six',
+    ],
     keywords='CT-e',
     packages=find_packages(),
     include_package_data=True,
